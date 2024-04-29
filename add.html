@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="add.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Project Pets</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a>About</a>
+            <a>Contact</a>
+            <a href="add.html">Add</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="form-add">
+        <h2 class="form-title">Add a statement</h2>
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-input" id="title" name="title" >
+
+            <label for="image" class="form-label">Image Src</label>
+            <input type="text" class="form-input" id="image" name="image">
+            
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" id="description" cols="30" rows="20"></textarea>
+
+            <label for="contactPersonName" class="form-label">Contact Person Name</label>
+            <input type="text" class="form-input" id="contactPersonName" name="contactPersonName">
+
+            <label for="contactPersonNumber" class="form-label">Contact Person Number</label>
+            <input type="text" class="form-input" id="contactPersonNumber" name="contactPersonNumber">
+
+            <button type="button" id="add-btn">Add</button>
+
+        </form>
+
+
+    </main>
+    
+    <script src="classes.js"></script>
+    <script src="add.js"></script>
+</body>
+</html>

@@ -7,6 +7,8 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
+/* Navigation */
+
 .main-nav{
     font-size: 1.5rem;
 }
@@ -14,6 +16,7 @@ body{
 .main-nav a{
     margin-right: 5px;
     color: white;
+    text-decoration: none;
 }
 
 .header {
@@ -26,6 +29,7 @@ body{
     width: 30%;
 }
 
+/* Search Bar */
 
 .search-input{
     width: 100%;
@@ -34,6 +38,8 @@ body{
     height: 20px;
     padding: 10px;
 }
+
+/* Statement */
 
 .pet-list{
     padding: 30px;
@@ -63,4 +69,5 @@ body{
 
 .statement-title{
     text-align: center;
+    font-weight: bold;
 }

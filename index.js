@@ -1,32 +1,30 @@
-class Statement{
-    constructor( title, contactPersonName, contactPersonNumber, address, description, pet, price, img){
-        this.title = title
-        this.contactPersonName = contactPersonName;
-        this.contactPersonNumber = contactPersonNumber;
-        this.address = address;
-        this.description = description;
-        this.pet = pet;
-        this.price = price;
-        this.img = img;
-    }
+
+
+const petList = document.querySelector('.pet-list');
+
+
+const statement1 = new Statement('ჩუქდება თეთრი კნუტი 1 თვის','ლუკა','555555555','თბილისი','არის საყვარელი',null,0,'https://www.catster.com/wp-content/uploads/2023/12/White-British-Shorthair_OksanaSusoeva-Shutterstock-1024x683-1.jpg');
+const statement2 = new Statement('ჩუქდება თეთრი კნუტი 1 თვის','ცოტნე','555555555','თბილისი','არის საყვარელი',null,0,'https://www.catster.com/wp-content/uploads/2023/12/White-British-Shorthair_OksanaSusoeva-Shutterstock-1024x683-1.jpg');
+
+const statementArray = [statement1,statement2];
+
+const appendStatement = (statement) =>{
+    const statementTemplate = `
+        <div class="statement">
+            <p class="statement-title">${statement.title}</p>
+            <img class="statement-img" src=${statement.img} alt="" srcset="">
+            <p class="description">${statement.description}</p>
+            <p class="author-info">Contact Name : ${statement.contactPersonName}</p>
+            <p class="author-info">Contact Number : ${statement.contactPersonNumber}</p>
+        </div>`;
+    petList.innerHTML += statementTemplate;
 };
 
 
-class Pet{
-    constructor(category, age, gender){
-        this.category = category;
-        this.age = age;
-        this.gender = gender;
+const appendAllStatements = (statements) =>{
+    for (const statement of statements){
+        appendStatement(statement);
     }
 };
 
-class Cat extends Pet{
-    constructor(category, age, gender, toiletFriendly){
-        super(category, age, gender)
-        this.toiletFriendly= toiletFriendly;
-    }
-};
-
-
-const statement = new Statement('ჩუქდება თეთრი კნუტი 1 თვის','ლუკა','555555555','თბილისი','არის საყვარელი',null,0,null); 
-
+appendAllStatements(statementArray);

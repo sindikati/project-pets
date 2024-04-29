@@ -1,0 +1,29 @@
+.form-add{
+    width:20%;
+    margin: 0 auto;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-input{
+    width: 100%;
+    border: 1px solid #8BC34A;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-title{
+    text-align: center;
+}
+
+#description{
+    resize: none;
+    width: 100%;
+    border: 1px solid #8BC34A;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
