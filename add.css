@@ -1,18 +1,19 @@
-.form-input:focus, #description:focus{
+.form-input:focus,
+#description:focus {
     outline: none;
     text-shadow: none;
 }
 
-.form-add{
-    width:20%;
+.form-add {
+    width: 20%;
     margin: 0 auto;
 }
 
-.form-label{
+.form-label {
     font-weight: bold;
 }
 
-.form-input{
+.form-input {
     width: 100%;
     border: 1px solid #8BC34A;
     border-radius: 8px;
@@ -20,11 +21,11 @@
     margin-bottom: 10px;
 }
 
-.form-title{
+.form-title {
     text-align: center;
 }
 
-#description{
+#description {
     resize: none;
     width: 100%;
     border: 1px solid #8BC34A;
@@ -33,8 +34,8 @@
     margin-bottom: 10px;
 }
 
-#add-btn{
-    border: 1px solid #8BC34A; 
+#add-btn {
+    border: 1px solid #8BC34A;
     border-radius: 8px;
     background-color: #8BC34A;
     height: 40px;
