@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    /* height: 200vh; */
 }
 
 body {
@@ -23,6 +24,18 @@ body {
 .header {
     padding: 20px 30px;
     background-color: #8BC34A;
+}
+
+/* Footer */
+
+.footer{
+    position:static;
+    width: 100%;
+    background-color:#8BC34A;
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+    height: 50px;
 }
 
 /* Search Bar */
@@ -60,6 +73,8 @@ body {
     padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
+    word-wrap: break-word;
+    
 }
 
 .statement {
@@ -78,10 +93,11 @@ body {
     cursor: pointer;
 }
 
-.author-info {
+.author-info, .statement-category, .statement-address {
     font-size: 0.8rem;
     color: gray;
 }
+
 
 .statement-title {
     text-align: center;

@@ -27,23 +27,42 @@
     <main>
         <form class="form-add">
             <h2 class="form-title">Add a statement</h2>
-            <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-input" id="title" name="title" required>
+            
+            <label for="title" class="form-label">Title <span style="color: red;">*</span></label>
+            <input type="text" class="form-input" id="title" name="title" maxlength="16"  placeholder="Maximum 16 character" required>
 
-            <label for="image" class="form-label">Image Src</label>
+            <label for="image" class="form-label">Image Src <span style="color: red;">*</span></label>
             <input type="text" class="form-input" id="image" name="image" required>
 
 
-            <label for="description" class="form-label">Description</label>
-            <textarea name="description" id="description" cols="30" rows="20" required></textarea>
+            <label for="description" class="form-label">Description <span style="color: red;">*</span></label>
+            <textarea name="description" id="description" cols="30" rows="5" maxlength="100" placeholder="Maximum 100 character" required></textarea>
 
-            <label for="contactPersonName" class="form-label">Contact Person Name</label>
-            <input type="text" class="form-input" id="contactPersonName" name="contactPersonName" required>
+            
+            <label for="pet" class="form-label">Category <span style="color: red;">*</span></label>
+            <select class="form-select" name="pet" id="pet">
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Other">Other</option>
+            </select>
 
-            <label for="contactPersonNumber" class="form-label">Contact Person Number</label>
-            <input type="text" class="form-input" id="contactPersonNumber" name="contactPersonNumber" required>
+            <label for="price" class="form-label">Price <span style="color: red;">*</span></label>
+            <input type="number" class="form-input" id="price" name="price" placeholder="0 to 5000 GEL"   required>
 
-            <button type="button" id="add-btn">Add</button>
+            <label for="address" class="form-label">City <span style="color: red;">*</span></label>
+            <input type="text" class="form-input" id="address" name="address" maxlength="16"  placeholder="Maximum 16 character" required>
+
+            <label for="contactPersonName" class="form-label">Contact Person Name <span style="color: red;">*</span></label>
+            <input type="text" class="form-input" id="contactPersonName" name="contactPersonName" maxlength="16"  placeholder="Maximum 16 character" required>
+
+            <label for="contactPersonNumber" class="form-label">Contact Person Number <span style="color: red;">*</span></label>
+            <input type="number" class="form-input" id="contactPersonNumber" name="contactPersonNumber"  maxlength="16"  placeholder="Maximum 16 character" required>
+
+
+            <button type="button" id="add-btn">Done</button>
+            <p style="font-size: 0.8rem; color: gray;">requred inputs<span style="color: red;">*</span></p>
+
+            
 
 
         </form>

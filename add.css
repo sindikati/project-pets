@@ -1,5 +1,6 @@
 .form-input:focus,
-#description:focus {
+#description:focus, 
+.form-select:focus{
     outline: none;
     text-shadow: none;
 }
@@ -25,6 +26,14 @@
     text-align: center;
 }
 
+.form-select{
+    width: 106%;
+    border: 1px solid #8BC34A;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 #description {
     resize: none;
     width: 100%;
@@ -42,4 +51,5 @@
     width: 106%;
     cursor: pointer;
     color: white;
+    font-size: 1.2rem;
 }

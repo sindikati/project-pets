@@ -14,9 +14,12 @@ const appendStatement = (statement) => {
         <div class="statement">
             <p class="statement-title">${statement.title}</p>
             <img class="statement-img" src=${statement.img} alt="" srcset="">
-            <p class="description">${statement.description}</p>
+            <p class="statement-description">${statement.description}</p>
+            <p class="statement-category">Category : ${statement.pet}</p>
+            <p class="statement-address">Location : ${statement.address}</p>
             <p class="author-info">Contact Name : ${statement.contactPersonName}</p>
             <p class="author-info">Contact Number : ${statement.contactPersonNumber}</p>
+            <p class="statement-price">Price : <span style="color:red">${statement.price} GEL</span></p>
         </div>`;
     petList.innerHTML += statementTemplate;
 };
