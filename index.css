@@ -24,33 +24,47 @@ body{
     background-color: #8BC34A;
 }
 
+/* Search Bar */
+
 .search-div{
     margin: 20px auto;
     width: 30%;
 }
 
-/* Search Bar */
-
 .search-input{
-    width: 100%;
+    width: 80%;
     border: 1px solid #8BC34A;
     border-radius: 8px;
     height: 20px;
     padding: 10px;
 }
 
+.search-btn{
+    border: 1px solid #8BC34A; 
+    border-radius: 8px;
+    background-color: #8BC34A;
+    height: 42px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-input:focus{
+    outline: none;
+    text-shadow: none;
+}
 /* Statement */
 
 .pet-list{
-    padding: 30px;
+    padding:0 10%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .statement{
-    width: 300px;
-    margin-right: 50px;
+    width: 270px;
+    margin-right: 30px;
     border: 1px solid #8BC34A;
-    padding:0 5px;
+    margin-top: 30px;
 }
 
 .statement-img{

@@ -1,3 +1,8 @@
+.form-input:focus, #description:focus{
+    outline: none;
+    text-shadow: none;
+}
+
 .form-add{
     width:20%;
     margin: 0 auto;
@@ -26,4 +31,14 @@
     border-radius: 8px;
     padding: 10px;
     margin-bottom: 10px;
+}
+
+#add-btn{
+    border: 1px solid #8BC34A; 
+    border-radius: 8px;
+    background-color: #8BC34A;
+    height: 40px;
+    width: 106%;
+    cursor: pointer;
+    color: white;
 }
