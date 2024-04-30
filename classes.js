@@ -1,7 +1,7 @@
 
 
-class Statement{
-    constructor( title, contactPersonName, contactPersonNumber, address, description, pet, price, img){
+class Statement {
+    constructor(title, contactPersonName, contactPersonNumber, address, description, pet, price, img) {
         this.title = title
         this.contactPersonName = contactPersonName;
         this.contactPersonNumber = contactPersonNumber;
@@ -14,17 +14,17 @@ class Statement{
 };
 
 
-class Pet{
-    constructor(category, age, gender){
+class Pet {
+    constructor(category, age, gender) {
         this.category = category;
         this.age = age;
         this.gender = gender;
     }
 };
 
-class Cat extends Pet{
-    constructor(category, age, gender, toiletFriendly){
+class Cat extends Pet {
+    constructor(category, age, gender, toiletFriendly) {
         super(category, age, gender)
-        this.toiletFriendly= toiletFriendly;
+        this.toiletFriendly = toiletFriendly;
     }
 };
