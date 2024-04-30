@@ -26,31 +26,33 @@
 
     <main>
         <form class="form-add">
-        <h2 class="form-title">Add a statement</h2>
+            <h2 class="form-title">Add a statement</h2>
             <label for="title" class="form-label">Title</label>
-            <input type="text" class="form-input" id="title" name="title" >
+            <input type="text" class="form-input" id="title" name="title" required>
 
             <label for="image" class="form-label">Image Src</label>
-            <input type="text"  class="form-input" id="image" name="image">
-            
+            <input type="text" class="form-input" id="image" name="image" required>
+
 
             <label for="description" class="form-label">Description</label>
-            <textarea name="description" id="description" cols="30" rows="20"></textarea>
+            <textarea name="description" id="description" cols="30" rows="20" required></textarea>
 
             <label for="contactPersonName" class="form-label">Contact Person Name</label>
-            <input type="text" class="form-input" id="contactPersonName" name="contactPersonName">
+            <input type="text" class="form-input" id="contactPersonName" name="contactPersonName" required>
 
             <label for="contactPersonNumber" class="form-label">Contact Person Number</label>
-            <input type="text" class="form-input" id="contactPersonNumber" name="contactPersonNumber">
+            <input type="text" class="form-input" id="contactPersonNumber" name="contactPersonNumber" required>
 
             <button type="button" id="add-btn">Add</button>
+
 
         </form>
 
 
     </main>
-    
+
     <script src="classes.js"></script>
     <script src="add.js"></script>
 </body>
+
 </html>
