@@ -9,7 +9,7 @@ const statementsAsString = localStorage.getItem('statements');
 const statementsAsArray = JSON.parse(statementsAsString);
 
 
-const appendStatement = (statement) =>{
+const appendStatement = (statement) => {
     const statementTemplate = `
         <div class="statement">
             <p class="statement-title">${statement.title}</p>
@@ -22,22 +22,22 @@ const appendStatement = (statement) =>{
 };
 
 
-const appendAllStatements = (statements) =>{
-    for (const statement of statements){
+const appendAllStatements = (statements) => {
+    for (const statement of statements) {
         appendStatement(statement);
     }
 };
 
 
-searchBtn.addEventListener('click', ()=>{
+searchBtn.addEventListener('click', () => {
     petList.innerHTML = '';
 
-    if(searchInput.value === ""){
-        appendAllStatements(statementArray);
+    if (searchInput.value === "") {
+        appendAllStatements(statementsAsArray);
         return;
     }
 
-    const filteredArray = statementArray.filter((statement)=>{
+    const filteredArray = statementsAsArray.filter((statement) => {
         if (statement.title.includes(searchInput.value)) {
             return true;
         } else {
