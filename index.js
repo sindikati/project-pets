@@ -9,6 +9,24 @@ const statementsAsString = localStorage.getItem('statements');
 const statementsAsArray = JSON.parse(statementsAsString);
 
 
+let searchStatements = [];
+
+// local host 
+const getStatements = () => {
+
+    $.ajax({
+        method: "GET",
+        url: "http://localhost:3000/statements",
+    })
+    .done(function (data) {
+            searchStatements = data
+            appendAllStatements(data);
+    })
+};
+
+getStatements();
+
+// statements
 const appendStatement = (statement) => {
     const statementTemplate = `
         <div class="statement">
@@ -32,15 +50,17 @@ const appendAllStatements = (statements) => {
 };
 
 
+
+// search button 
 searchBtn.addEventListener('click', () => {
     petList.innerHTML = '';
 
     if (searchInput.value === "") {
-        appendAllStatements(statementsAsArray);
+        appendAllStatements(searchStatements);
         return;
     }
 
-    const filteredArray = statementsAsArray.filter((statement) => {
+    const filteredArray = searchStatements.filter((statement) => {
         if (statement.title.includes(searchInput.value)) {
             return true;
         } else {
@@ -51,5 +71,3 @@ searchBtn.addEventListener('click', () => {
     appendAllStatements(filteredArray);
 });
 
-
-appendAllStatements(statementsAsArray);
