@@ -1,0 +1,6 @@
+{
+    "statements": [
+      {"title": "black cat", "description":"she is lovly and friendly", "img" : "https://media.cnn.com/api/v1/images/stellar/prod/191026120622-03-black-cat.jpg?q=w_1110,c_fill", "category": "cat", "address": "tbilisi", "contactPersonName":"lilia", "contactPersonNumber": "555789123", "price": "0"}
+    ]
+  }
+
