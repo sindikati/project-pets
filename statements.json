@@ -1,0 +1,26 @@
+{
+  "statements": [
+    {
+      "id": "af56",
+      "title": "black kitty",
+      "contactPersonName": "Nino",
+      "contactPersonNumber": "555678123",
+      "address": "Tbilisi",
+      "description": "he is cute and somtimes he is angry",
+      "pet": "Cat",
+      "price": "50",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa74JQET98IN1fAfsm0FqbOrlmnJI3Q9dRLA_fx85oNg&s"
+    },
+    {
+      "id": "4785",
+      "title": "red puppy",
+      "contactPersonName": "Lilia",
+      "contactPersonNumber": "555123123",
+      "address": "Rustavi",
+      "description": "he is friendly",
+      "pet": "Dog",
+      "price": "185",
+      "img": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/red-cavapoo-puppy-7-weeks-old-mark-taylor.jpg"
+    }
+  ]
+}
