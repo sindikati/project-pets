@@ -21,6 +21,17 @@
       "pet": "Dog",
       "price": "185",
       "img": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/red-cavapoo-puppy-7-weeks-old-mark-taylor.jpg"
+    },
+    {
+      "id": "176c",
+      "title": "barn owl",
+      "contactPersonName": "Zura",
+      "contactPersonNumber": "555432234",
+      "address": "Zestafoni",
+      "description": "barn owls as usual they are cute",
+      "pet": "Other",
+      "price": "2800",
+      "img": "https://nestwatch.org/wp-content/uploads/2012/10/Baby-Barnies-2_BrianMealey-360.jpg"
     }
   ]
 }

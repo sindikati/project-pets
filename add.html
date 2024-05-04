@@ -18,8 +18,8 @@
     <header class="header">
         <nav class="main-nav">
             <a href="index.html">Home</a>
-            <a>About</a>
-            <a>Contact</a>
+            <a class="profile-login">Log Out</a>
+            <a>Profile</a>
             <a href="add.html">Add</a>
         </nav>
     </header>
@@ -29,7 +29,7 @@
             <h2 class="form-title">Add a statement</h2>
             
             <label for="title" class="form-label">Title <span style="color: red;">*</span></label>
-            <input type="text" class="form-input" id="title" name="title" maxlength="16"  placeholder="Maximum 16 character" >
+            <input type="text" class="form-input" id="title" name="title" maxlength="16"  placeholder="" >
 
             <label for="image" class="form-label">Image Src <span style="color: red;">*</span></label>
             <input type="text" class="form-input" id="image" name="image" required>
@@ -50,17 +50,17 @@
             <input type="number" class="form-input" id="price" name="price" placeholder="0 to 5000 GEL"   >
 
             <label for="address" class="form-label">City <span style="color: red;">*</span></label>
-            <input type="text" class="form-input" id="address" name="address" maxlength="16"  placeholder="Maximum 16 character" >
+            <input type="text" class="form-input" id="address" name="address" maxlength="16"  placeholder="" >
 
             <label for="contactPersonName" class="form-label">Contact Person Name <span style="color: red;">*</span></label>
-            <input type="text" class="form-input" id="contactPersonName" name="contactPersonName" maxlength="16"  placeholder="Maximum 16 character" >
+            <input type="text" class="form-input" id="contactPersonName" name="contactPersonName" maxlength="16"  placeholder="" >
 
             <label for="contactPersonNumber" class="form-label">Contact Person Number <span style="color: red;">*</span></label>
-            <input type="number" class="form-input" id="contactPersonNumber" name="contactPersonNumber"  maxlength="16"  placeholder="Maximum 16 character" >
+            <input type="number" class="form-input" id="contactPersonNumber" name="contactPersonNumber"  maxlength="16" min="0" placeholder="" >
 
 
             <button type="button" id="add-btn">Done</button>
-            <p style="font-size: 0.8rem; color: gray;">requred inputs<span style="color: red;">*</span></p>
+            <p style="font-size: 0.8rem; color: gray;">required inputs<span style="color: red;">*</span></p>
 
             
 

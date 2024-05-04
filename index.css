@@ -103,3 +103,11 @@ body {
     text-align: center;
     font-weight: bold;
 }
+
+
+
+
+.profile-login{
+    float: right;
+    padding-right: 5px;
+}
