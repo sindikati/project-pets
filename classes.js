@@ -1,8 +1,8 @@
 
 
 class Statement {
-    constructor(title, contactPersonName, contactPersonNumber, address, description, pet, price, img) {
-        this.title = title
+    constructor(title, contactPersonName, contactPersonNumber, address, description, pet, price, img, id) {
+        this.title = title;
         this.contactPersonName = contactPersonName;
         this.contactPersonNumber = contactPersonNumber;
         this.address = address;
@@ -10,6 +10,7 @@ class Statement {
         this.pet = pet;
         this.price = price;
         this.img = img;
+        this.id = id;
     }
 };
 
